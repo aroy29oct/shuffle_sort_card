@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+  }
+
+.mainDiv {
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+    /* height: 33vh; */
+    font-size: 20vh;
+    color: #dedede;
+    text-align: center;
+}
+ #card1 {
+     background-color: #000000;
+ }
+ #card2 {
+     background-color: #2B8EAD;
+ }
+ #card3 {
+    background-color: #333333;
+}
+#card4 {
+    background-color: #6F98A8;
+}
+#card5 {
+    background-color: #FFFFFF;
+}
+#card6 {
+    background-color: #BFBFBF;
+}
+#card7 {
+    background-color: #EFEFEF;
+}
+#card8 {
+    background-color: #2F454E;
+}
+#card9 {
+    background-color: #72C3DC;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+.btn{
+    width: 20vw;
+    height: 10vh;
+    background-color: #2b8ead;
+    box-shadow: 0px 8px 4px 1px #6ca1b1;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+#sortBtn{
+    margin-top:20px;
+}
+.bottomText{
+    text-align: center;
+}
+.headingLabel{
+    text-align: center;
+}
+/***responsive CSS**/
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/**media queries**/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .mainDiv {
+        /* background-color: #dedede; */
+        color:#000000;
+    }
+    #card1 {
+        background-color: #dedede;
+        border-left: 30px solid #000000;
+        margin-bottom: 8px;
+    font-size: 8vh;
+    }
+    #card2 {
+        background-color: #dedede;
+        border-left: 30px solid #2B8EAD;
+        margin-bottom: 8px;
+    font-size: 8vh;
+    }
+    #card3 {
+        background-color: #dedede;
+        border-left: 30px solid #333333;
+        margin-bottom: 8px;
+    font-size: 8vh;
+   }
+   #card4 {
+        background-color: #dedede;
+        border-left: 30px solid #6F98A8;
+        margin-bottom: 8px;
+    font-size: 8vh;
+   }
+   #card5 {
+        background-color: #dedede;
+        border-left: 30px solid #FFFFFF;
+        margin-bottom: 8px;
+    font-size: 8vh;
+   }
+   #card6 {
+        background-color: #dedede;
+        border-left: 30px solid #BFBFBF;
+        margin-bottom: 8px;
+    font-size: 8vh;
+   }
+   #card7 {
+        background-color: #dedede;
+        border-left: 30px solid #EFEFEF;
+        margin-bottom: 8px;
+        font-size: 8vh;
+   }
+   #card8 {
+        background-color: #dedede;
+        border-left: 30px solid #2F454E;
+        margin-bottom: 8px;
+        font-size: 8vh;
+   }
+   #card9 {
+        background-color: #dedede;
+        border-left: 30px solid #72C3DC;
+        margin-bottom: 8px;
+        font-size: 8vh;
+   }
+   .btnHolder{
+    position: absolute;
+    top: 60px;
+    text-align: center;
+   }
+   #cardHolder {
+    position: relative;
+    top: 20vh;
+   }
+   #shuffleBtn {
+    margin-right: 5px;
+    width: 30vw;
+   }
+   #sortBtn {
+    margin-left: 5px;
+    width: 30vw;
+   }
+   .btnHolder{
+       text-align: center;
+   }
+   .btn{
+       font-size: 1.6rem;
+   }
+   .bottomText{
+       position: relative;
+       top: 17vh;
+   }
+   .headingLabel{
+    position: relative;
+    font-size: 2rem;
+    background: #646b64;
+    margin: 0;
+    height: 6vh;
+   }
+  }
